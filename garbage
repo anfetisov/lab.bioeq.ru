@@ -1,0 +1,38 @@
+<form method="GET" action="#">
+                Name:
+                <br>
+                <div id="colName">
+                    <div>
+                        1.<input id="col_name[1]" name="col_name[1]" type="text" />
+                        <a onclick="return deleteField()" href="#">[X]</a>
+                    </div>
+                </div>
+                Data:
+<!--                <br>-->
+<!--                <div id="colVal">-->
+<!--                    <div>-->
+<!--                        1.<input id="col_val[1]" name="col_val[1]" type="text" />-->
+<!--                    </div>-->
+<!--                </div>-->
+                <input class="s" type="submit" value="GO!" />
+            </form>
+            <a onclick="return addField()" href="#">Добавить поля</a>
+            <br><br>
+            <br><br>
+            <form name="recordForm" action="#">
+                Выберите показатель
+                <select id="recordName" name="recordName">
+                    <option value="11">Клинический анализ крови</option>
+                    <option value="22">Биохимический анализ крови</option>
+                    <option value="33">Общий анализ мочи</option>
+                </select>
+                <a onclick="return addRecord()" href="#">[+]</a>
+            </form>
+            <br><br>
+            <form method="GET" action="#">
+                <div id="record">
+                    <div>
+                        <a onclick="return addRecord()" href="#">[-]</a>
+                    </div>
+                </div>
+            </form>
